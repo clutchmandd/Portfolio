@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>David Dixon</title>
+        <link rel="stylesheet" type="text/css" href=".//stylesheet/porfolio.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--BREAKS INSERTED TO ADD SPACE BETWEEN NAVBAR AND THE FIRST HEADING-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Code_Video">
+                <source src="./images/video/video.mp4" type="video/mp4">
+                <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">David Dixon's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Perfection is achieved not when there is nothing more to add,
+                        <br>but rather when there is nothing more to take away.
+                    </q>
+                    <br> -Antoine de Saint-Exupery
+                    <br>
+                    <br> My name is David Dixon. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thanks for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="./images/codepic.jpeg" alt="Picture not Found">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am an up-and-coming software developer who loves to code! As a husband and father of two, I enjoy time with my family, traveling, and cars of course.
+                    <br>
+                    <br>I am a full-time student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, getting training and experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python, and more.
+                    <br>
+                    <br>I am well on my way to becoming a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/clutchmandd" target="_blank">Clutchmandd GitHub</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="https://github.com/clutchmandd" target="_blank"><img src="./images/githublogo.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/businessman.jpg" alt="Contact Image">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA-->
+                <form action="https://formspree.io/f/mleapjeq" method="POST"> <!--HERE I AM UTILIZING A 3RD PARTY SERVICE TO SUBMIT THE CONTACT FORM DATA-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <p>
+                <p class="center">&copy; Dixon Solutions LLC</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
